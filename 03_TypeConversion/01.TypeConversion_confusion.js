@@ -37,6 +37,9 @@ console.log(String(number))
 console.log(typeof(String(number)))
     
 
+// ******************************************************OPERATION ********************************//
+
+// in 2nd part
 
 
 
