@@ -1,3 +1,10 @@
+
+
+
+// TODO:-->>> Implement the working of all string Methodes only implement not mugup them so that whenever needed it is Known to YOu that how to use them
+
+
+
 // Two Methods for declaring the string
 //1-Methode>> 
 let name="Rishabh"
