@@ -22,6 +22,7 @@ console.log(+" ")           // as we know empty string is treated as false so th
 let num1,num2=8,num3                        // this will give undefined value to each variable num1,num2,num3. but if we give some value to num3 than it will not give undefined values
 num1=num2=num3
 console.log(num1,num2,num3)
-
+num2=num3=num1
+console.log(num1,num2,num3);
 
 // TODO =>> Study from "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-abstract-operations" 
