@@ -35,4 +35,4 @@ console.log(newDate.getDate())
 newDate.toLocaleString('default',{
     weekday:"long"
 })
-
+// TO study more about this .
