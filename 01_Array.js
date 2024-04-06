@@ -32,7 +32,7 @@ console.log(newarr);
             // Use of join operation
 
 console.log(newarr.includes('d'));   //--->>> Returns true if the given argument is present in the array otherwise returns fale.
-const ans=newarr.join("-"); // THis methode does not creates a new array and does not modify in the same array.
+const ans=newarr.join("-"); // THis methode does creates a new array and does not modify in the same array.
 console.log(newarr);    
 console.log(ans);     
                   
