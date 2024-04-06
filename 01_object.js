@@ -11,12 +11,14 @@
 const JsUser={
     name:"Rishabh",
     age:22,
+    age:21,             // THis value is displayed not the 22.
     "married": false,
     "location":"Uttar Pradesh",
     "current location":"U.P.",
     lastloginday: ["Monday","Saturday"]
 
 }
+console.log(JsUser.age)
 // THe key in the object is of string type internaly but it is not necessary that you have to write it in " "(double quotes). we can write keys without using double quotes it wiil be valid.
 
 //--->>> There are Two important way to access the value for any key in objects.
