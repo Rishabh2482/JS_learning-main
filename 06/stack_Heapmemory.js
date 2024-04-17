@@ -3,6 +3,8 @@
 // 1--->>> Stack is call by value. ()
 let nameOne="User";
 let nameTwo;
+let nameThree="User";
+console.log(nameOne===nameThree); // true because they have the same memory location.
 
 // passing the value not reference
 nameTwo=nameOne
@@ -15,7 +17,12 @@ let detailOne={
     username:"User123",
     email:"User@123.com"
 }
-
+let detailTwo=
+{
+    username:"User123",
+    email:"User@123.com"
+}
+console.log(detailOne===detailTwo);   // false because they are in different memory locations
 // passing the reference not value.
 detailTwo=detailOne
 
