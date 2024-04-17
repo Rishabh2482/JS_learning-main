@@ -11,7 +11,7 @@ let negVal=-value
 // console.log("1" +2-3) // If string comes first it implecitly convert string to number than perform  airthmatic operation
 // console.log(1 +2+"3") 
 // console.log(1 +2+3)
-
+// console.log("1", console.log("1"+2-3))  // console.log always starts reading the code from right to left so it's output will be {9 }and in next line output willbe { 1 undefined}
             //Triky -2
 console.log(true)               // here the value is "true " no conversion is done here.
 console.log(+true)          // here the value of true is converted into 1 and than it is evalueated  output=>>{1}
