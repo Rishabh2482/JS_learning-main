@@ -10,6 +10,11 @@ console.log(`02`>1)
 
 console.log(null>undefined)
 console.log(null>=undefined)
+// when you run console.log(null >= undefined), the following steps occur:
+// 1. null is converted to 0.
+// 2. undefined is converted to NaN.
+// 3. The comparison 0 >= NaN is performed.
+// 4. The result of this comparison is false.
 console.log(null<=undefined)
 console.log(null==undefined)
 
