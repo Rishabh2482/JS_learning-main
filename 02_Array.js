@@ -30,6 +30,12 @@ let var3=true;
 console.log(Array.of(var1,var2,var3))
 // Question -->>>How to check the object is empty or not?
 let obj={}
+if(Object.keys(obj).length===0)
+console.log("Empty");
+else
+console.log("Not Empty");
+
+// Question -- >> How to find out the index of a element in an array ?
 
 
 
