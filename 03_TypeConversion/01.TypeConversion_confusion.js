@@ -8,10 +8,30 @@ let valInNumber=Number(str);
 console.log(valInNumber);
 console.log(typeof(valInNumber))
 
-// be carefull while type conversion using Number function it will try to convert the value to number and if it fails to do so it return "NaN", same goes for parseInt()
+// be carefull while type conversion using Number function it will try to convert the value to number and if it fails to do so it return "NaN"
 
 let val="eimv";
 let num=parseInt(val);
+
+/*
+
+ Remember This diffrence between the parseInt and Number function of javascript:- 
+"The parseInt function in JavaScript is used to convert a string to an integer.
+ When parseInt encounters a string, it reads the string character by character from the beginning and stops parsing when it encounters
+  a character that is not valid in the specified radix (base). By default, parseInt uses base 10."
+
+  
+  
+ " When using the Number function in JavaScript to convert a string to a number, the function attempts to convert the entire string.
+   If the string contains any invalid characters for a number, the conversion fails and returns NaN (Not-a-Number)."
+  
+    that is why 
+    const val=parseInt("4aa")
+    console.log(val)          output will be 4, and not NAN.
+
+    const val=Number("4aa")
+    console.log(val)          output will be Nan, and not 4.
+*/
 console.log(num)
 console.log(typeof(num))
 
