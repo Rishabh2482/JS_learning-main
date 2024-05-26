@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <h1>This is Pablo E'scobar</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+// In This Project-1 when we click on 'start' button than a some msg will be printed on screen and when someone click on 'stop' button then it will stop printing the message.
+
+    let startBtn;
+    document.querySelector('#start').addEventListener('click',function(){
+        startBtn=setInterval(()=>(console.log("Go Goa Gone",Date.now())),1000)
+    })
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(startBtn);
+    })
+</script>
+</html>
