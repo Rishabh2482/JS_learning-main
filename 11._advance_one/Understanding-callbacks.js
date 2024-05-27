@@ -1,6 +1,11 @@
 // Aim is to understand the funcionality ,working and syntax of callbacks. and pyramid of dom/(callback hell).
 
-
+// Important points for interview:
+// 1. What is callback and how it is diffrent from normal function ?
+// 2. Need of callback why do not we use name of function directly insted of using callback ?.
+// 3. Drawback of callback ?
+// 4. Solution to the problem arise by the use of callback.?
+// 5. check the markdown file
 
 
 
