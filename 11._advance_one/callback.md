@@ -175,3 +175,4 @@ Error: Task failed
 7. Multiple Callbacks: Functions that accept multiple callbacks for different scenarios.
 ```
 Callbacks are a fundamental concept in JavaScript that enable powerful asynchronous programming patterns, making code more flexible and modular.
+

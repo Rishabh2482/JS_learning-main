@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.card {
+    margin-top: 1rem;
+    max-width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+</style>
+<body>
+    The XMLHttpRequest.readyState property returns the state an XMLHttpRequest client is in. An XHR client exists in one of the following states:
+
+Value	State	Description
+0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete.
+
+    <div class="card">
+        <div class="img">
+           
+        </div>
+        <div class="caption">
+            <p class="name"></p>
+            <p class="followers"></p>
+        </div>
+    </div>
+    
+<!-- 
+     <div class="card">
+        
+     </div>
+
+        <div class="container">
+          <h4 class="name">
+           
+          </h4>
+          <p class="followers">
+
+          </p>
+        </div> -->
+
+
+</body>
+
+<script>
+
+  
+// 1- Project of adding the image ,name ,followers by taking the values form an api and showing them up in a card.
+
+
+
+    const img=document.querySelector('.img');
+    const name=document.querySelector('.name');
+    const followers=document.querySelector('.followers');
+
+    const requestUrl='https://api.github.com/users/hiteshchoudhary'
+    
+    const xhr=new XMLHttpRequest();
+
+    xhr.open('GET', requestUrl);
+    
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState==4)
+        {
+            const data= JSON.parse(this.response);
+            console.log(data);
+            console.log(typeof data);
+            console.log(data["followers"]);
+            // photo
+            const photo=data["avatar_url"];
+            img.innerHTML=`<img src="${photo}" alt="hitesh"></img>`
+
+            // name
+            const Name=data["name"];
+            // console.log(name.parentNode.firstElementChild)
+            // name.innerHTML=`<b>${Name}</b>`
+            name.innerHTML=`<b>Name: ${Name}</b>`
+
+            followers.innerHTML=`<b>Followers: ${data.followers}</b>`;
+        }
+    }
+
+    xhr.send()
+
+</script>
+</html>
